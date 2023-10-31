@@ -17,6 +17,11 @@
           </a>
           <h2>{{ image.title }}</h2>
           <p>{{ image.caption }}</p>
+          <ul>
+            {% for item in image.list %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
         </article>
         {% endfor %}
 
